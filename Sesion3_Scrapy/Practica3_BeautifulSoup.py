@@ -5,8 +5,10 @@ import requests
 from bs4 import BeautifulSoup
 
 main_url = 'http://books.toscrape.com/catalogue/'
-books_file = R'C:\Users\sergi\OneDrive\Documentos\SIR_personal\AMAT_Python_scrapping\Practica3\books.csv'
-images_directory = R'C:\Users\sergi\OneDrive\Documentos\SIR_personal\AMAT_Python_scrapping\Practica3\images'
+##books_file = R'C:\Users\sergi\OneDrive\Documentos\SIR_personal\AMAT_Python_scrapping\Practica3\books.csv'
+books_file = R'C:\Users\Sergio\Documents\SIR_Personal_Dell\AMAT_Python_scrapping\Practica3\books.csv'
+##images_directory = R'C:\Users\sergi\OneDrive\Documentos\SIR_personal\AMAT_Python_scrapping\Practica3\images'
+images_directory = R'C:\Users\Sergio\Documents\SIR_Personal_Dell\AMAT_Python_scrapping\Practica3\images'
 headers = {'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:52.0) Gecko/20100101 Firefox/52.0'}
 pages_to_scrape = 50
 
