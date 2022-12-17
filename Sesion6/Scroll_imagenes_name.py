@@ -45,7 +45,7 @@ print(images_num)
 for image in images:
     image_url = image.get_attribute('src')
     print(f"Descargando {image_url}")
-    urllib.request.urlretrieve(image_url, f"C:/Users/llell/Documents/SIR_Personal/Other_Courses/{image_url.rsplit('/', 1)[1]}")
+    urllib.request.urlretrieve(image_url, Rf"C:/Users/llell/Documents/SIR_Personal/Other_Courses/galery/{image_url.rsplit('/', 1)[1]}")
     print('Imagen descargada!')
     time.sleep(5)    
 

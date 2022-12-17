@@ -38,7 +38,7 @@ print(images_num)
 for index, image in enumerate(images):
     image_url = image.get_attribute('src')
     print(f"Descargando {image_url}")
-    urllib.request.urlretrieve(image_url, Rf"C:/Users/llell/Documents/SIR_Personal/Other_Courses/imagen_{index}.jpg")
+    urllib.request.urlretrieve(image_url, Rf"C:/Users/llell/Documents/SIR_Personal/Other_Courses/galery/imagen_{index}.jpg")
     print('Imagen descargada!')
     time.sleep(5)
 

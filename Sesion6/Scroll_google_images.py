@@ -6,9 +6,8 @@ import urllib.request
 import time
 
 
-
 driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
-query = "messi"
+query = "messi qatar"
 search_url = f"https://www.google.com/search?safe=off&site=&tbm=isch&source=hp&q={query}&oq={query}&gs_l=img"
 driver.get(search_url)
 time.sleep(6)
@@ -57,7 +56,7 @@ for index, image in enumerate(images):
     try:
         new_image = image.find_element(By.XPATH, ".//a/div/img")
         image_url = new_image.get_attribute('src')
-        urllib.request.urlretrieve(image_url, f"/home/goz/Courses/web_scraping/practica_1/clase3/selenium/gallery/{index}.jpg")
+        urllib.request.urlretrieve(image_url, Rf"C:/Users/llell/Documents/SIR_Personal/Other_Courses/galery/{index}.jpg")
         print('Imagen descargada!')
         images_saved += 1
         print(f"Tenemos {images_saved} imagenes")
