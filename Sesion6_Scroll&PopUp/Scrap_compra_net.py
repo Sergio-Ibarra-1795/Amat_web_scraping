@@ -28,6 +28,7 @@ def get_table_information():
             json_file.write(ad)
             json_file.write(',\n')
 
+##PARA DARLE CLICK AL BOTON NEXT Y PASAR A LA SIGUIENTE PÁGINA
     try:
         next_page = driver.find_element(By.XPATH, "//a[@class='NavBtnForward']")
         next_page.click()
